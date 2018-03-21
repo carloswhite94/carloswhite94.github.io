@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[3月20日]]></title>
+    <url>%2F2018%2F03%2F20%2F3-20%2F</url>
+    <content type="text"><![CDATA[Does the people’s deputies really represent the people?除了不可控因素（疾病，意外事故，先天条件）外，很多不良事件（违法，违纪，甚至网瘾）的产生条件都是源于自我的。设定限制和规范，是可以改善社会大环境下的情况，但是这就像是癌症切除了可见的肿块一样，只是表面上的痊愈。Not everyone violence and learns to kill, see porn and addicted to it.不是所有疾病药到就会病除。]]></content>
+      <categories>
+        <category>Diary</category>
+      </categories>
+      <tags>
+        <tag>政治</tag>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[在Github/Coding上利用分支实现云同步Hexo博客]]></title>
+    <url>%2F2018%2F03%2F18%2F3-18%2F</url>
+    <content type="text"><![CDATA[原文来自CrazyMilk 博客搭建流程（加粗文字为我在Coding的搭建过程） 创建仓库，CrazyMilk.github.io；Coding是新建项目，项目名例如Carlos 创建两个分支：master 与 hexo；Coding相同，在分支选项中新建hexo分支，需要初始化仓库 设置hexo为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件）；Coding相同 使用git clone git@github.com:CrazyMilk/CrazyMilk.github.io.git拷贝仓库；这里我也使用SSH来clone，指令相似git clone git@git.coding.net:carloswhite/carlos.git 在本地CrazyMilk.github.io文件夹下通过Git bash依次执行npm install hexo、hexo init、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为hexo）；我在之前已经搭建了现有的hexo博客，因此只是把博客文件夹考入仓库文件夹 修改_config.yml中的deploy参数，分支应为master；同上一步，我之前已经做过修改，这里直接跳过 依次执行git add .、git commit -m “…”、git push origin hexo提交网站相关的文件；在clone的那个文件夹中执行这些代码即可 执行hexo generate -d生成网站并部署到GitHub上。hexo g -d即可 博客管理流程1.日常修改在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理： 依次执行git add .、git commit -m “…”、git push origin hexo指令将改动推送到GitHub（此时当前分支应为hexo）；然后才执行hexo g -d发布网站到master分支上。虽然两个过程顺序调转一般不会有问题，不过逻辑上这样的顺序是绝对没问题的（例如突然死机要重装了，悲催….的情况，调转顺序就有问题了）。 2.本地资料丢失当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤： 使用git clone git@github.com:CrazyMilk/CrazyMilk.github.io.git拷贝仓库（默认分支为hexo）；在本地新拷贝的CrazyMilk.github.io文件夹下通过Git bash依次执行下列指令：npm install hexo、npm install、npm install hexo-deployer-git（记得，不需要hexo init这条指令）。 END文章来自CrazyMilk的博客，稍作了改动。他的博客：http://crazymilk.github.io]]></content>
+      <categories>
+        <category>technical article</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>hexo</tag>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[About Love]]></title>
+    <url>%2F2018%2F03%2F13%2Faboutlove%2F</url>
+    <content type="text"><![CDATA[对话选段 -Goddamn it, Andrew! 该死的 安德鲁！ If you’re going to succeed at this thing… 如果你想成功的话… -What thing? 什么成功？ -This…this thing you’re trying to do… 就是你现在正在做的事… You’ve got to stop being so damn deferential. 你就不能表现的这么有礼貌 -I can’t help being deferential. It’s built-in. 有礼貌是我的本性 -Then change. 那就改 -Change? I have changed. 改变？我已经改变了 -I don’t mean on the outside. Change on the inside. 不是外表 而是内在 Take chances, make mistakes. 去冒险 去犯错 -Mistakes? 犯错？ -Yes! Sometimes it’s important not to be perfect, okay? 对 有时不需要太完美 It’s important to do the wrong thing! 做错事也是很重要的 -Do the wrong thing? 做错事？ -Yes. 是的 -Why? Oh I see. To learn from your mistakes. 为什么？我懂了，为了从错误中学习 -No. To make them! 不 是去犯错 To find out what’s real and what’s not, to find out what you feel.发现什么是真实什么是虚假 看清你自己的感受 Human beings are terrible messes, Andrew. 人类本来就是一团糟 -I’ll grant you that. I see. 这我同意 我明白了 This is what is known as an irrational conversation, isn’t it?这就是所谓的非理性沟通 对吧？ -No, this is a human conversation. 不 这是人性的沟通 It’s not about being rational. It’s about following your heart. 这和理性无关而是要去倾听自己的心声 -And that’s what I should do? 我该那么做吗？ -Yes. And you have a heart, Andrew. You do. 是的 你有心 安德鲁 你有 I feel it. I don’t even believe it sometimes, but I do feel it.虽然有时我也不相信 但我能感受到 -And in order to follow that heart… one must do the wrong thing. 要倾听自己的心声…有时就得犯错 -Yes. 是的 -Thank you. 谢谢 -So you’re not married yet? 你还没结婚？ -No, two weeks from Saturday. 还没 婚礼在两星期后 -I’m not too late. 我还来得及 Are you absolutely positive you’re doing the right thing? 你确定你的决定是正确的？ -Positive? 当然 -About getting married? 我是指你的婚事 -I’m never absolutely positive about anything. 我从没百分之百确定过任何事 -So you could be doing the wrong thing. 那么你的决定可能是错的 -No, I’m pretty sure I’m doing the right thing. 不 我能确定自己做的是正确的事 -Great. 好极了 -Why is that great? 为什么好极了？ -Well, in your apartment, you told me to do the wrong thing. 你曾经叫我去犯错 Now, you are not doing the wrong thing. You’re doing the right thing.而现在你做的事是对的而不是错的 It’s safe to say you’re not following your own advice. 你违反了自己的忠告 ‘Cause if you were, you would definitely not be marrying this man,Charles. 否则 你就不会嫁给查尔斯了 -Because I would be doing the right thing. 因为我这么做是对的 -Precisely. 正答 -In some strange way, you’re starting to make sense. 听起来奇怪 不错你说的确实有点道理 -Good. 很好 Do you have any idea what it’s like to be in love with someone…who’sabout to marry someone else? 你知道爱上一个即将嫁做人妇的人是什么滋味？ Someone totally magnificent, someone who walks into a room and lightsit up like the sun? 爱上一个完美 一个会令蓬荜生辉的人？ Someone who you know is lying to herself? 一个自欺欺人的人？ -Lying? 自欺欺人？ -Convincingly, yeah. Very, very much so. 不过很具有信服力 -About what? 我有什么好骗你的？ -That you don’t love me. 说你不爱我 When I know at least in some way you do. 我知道你爱我 -And how do you know that? 你怎么会知道？ -Portia. 波夏 I have done everything, inside and out. 我从内到外都改变了 -But that stuff doesn’t matter to me. 我不在乎那些 -Well, something matters 总有些能让你在意的 ‘Cause I’d have to believe if nothing mattered, you’d love me…如果不在意的话 我相信你会爱我 And not some man whose chin could sink the Titanic.而不会爱上一个下巴可以凿沉铁达尼号的人 -What? See? It’s true, isn’t it? 看 我说的没错吧？ -Yeah. 对 -I’m sorry. 对不起 Does he light you up like this? Does he make you laugh? 他能像我一样逗你笑吗？ -Nobody makes me laugh like this. 没能人这样逗我笑 -Good. Then admit it. Admit that you love me. 承认吧 你是爱我的 Give me one kiss. 吻我一下 -Oh, God. 上帝啊 -That’s all. One quick kiss. 只要一个吻 Just one kiss…could not jeopardise a glorious marriage.一个吻….不会威胁到你美满的婚姻 Besides, it would also explain to me why your pulse jumped from 66 to102 beats per minute. 这也能解释你的心跳为什么一分钟高达102下 Your respiration rate has doubled. You’re putting out clouds ofpheromones. 为什么呼吸速率加倍且散发出一股女性魅力 -It’s not fair to read me like that. 这不公平 你能看透我 -I know. Love isn’t fair. 我知道 爱情本来就不公平 I’m reading your heart. I’m asking you to follow it. 我在透视你的心我要你倾听自己的心声 Begging you. 求你 Begging is supposed to be humiliating. I don’t care. 求人是很丢脸的 但我不在乎 I love you, Portia. 我爱你 波夏 I loved you the very first moment I saw you. 从我第一眼看到你我就爱上你了 音乐链接对话来自电影《Bicentennial man》——1999]]></content>
+      <categories>
+        <category>Share</category>
+      </categories>
+      <tags>
+        <tag>Movie</tag>
+        <tag>Music</tag>
+        <tag>Love</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[TensorFlow学习笔记（一）]]></title>
+    <url>%2F2018%2F03%2F12%2F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01%2F</url>
+    <content type="text"><![CDATA[正文以下是TF社区中介绍tensorflow的一段代码，作用是通过机器学习拟合一个三维数组 123456789101112131415161718192021222324252627282930313233import tensorflow as tfimport numpy as npimport matplotlib.pyplot as plt# 使用 NumPy 生成假数据(phony data), 总共 100 个点.x_data = np.float32(np.random.rand(2, 100)) # 随机输入y_data = np.dot([0.100, 0.200], x_data) + 0.300# 构造一个线性模型#b = tf.Variable(tf.zeros([1]))W = tf.Variable(tf.random_uniform([1, 2], -10.0, 10.0))y = tf.matmul(W, x_data) + b# 最小化方差loss = tf.reduce_mean(tf.square(y - y_data))optimizer = tf.train.GradientDescentOptimizer(0.5)train = optimizer.minimize(loss)# 初始化变量init = tf.initialize_all_variables()# 启动图 (graph)sess = tf.Session()writer = tf.summary.FileWriter("logs/", sess.graph)sess.run(init)# 拟合平面for step in range(0, 201): sess.run(train) if step % 20 == 0: print(step, sess.run(W), sess.run(b))# 得到最佳拟合结果 W: [[0.100 0.200]], b: [0.300] np.float32–它的作用是生成32位的浮点数，还有float64，代表64位浮点数，在内存中占位分别是32 / 64bit，4bytes / 8b ytes还有很多，可以去numpy了解更详细的内容。 np .random.rand(a,b) - 它的作用是生成一个行b列的二维数组，下面附上使用实例：1234567import numpy as npx=np.float32(np.random.rand(2,4))print(x)##打印结果如下：[[0.80409247 0.11628524 0.5494453 0.43813357] [0.6856535 0.04227876 0.26029631 0.18323998]] np.dot(a,b,out) - 这个比较麻烦，用一些例子来说明： 12345678910111213141516y1=np.dot([0.100,0.200],0.300)#矩阵与常数的乘积y2=np.dot(2,3)#两数的乘积y3=np.dot([3j,4j],[1j,2j])#矢量的内积，带有后缀j的浮点数表示一个复数a=[[1,1],[2,2]]b=[[2,2],[3,3]]y4=np.dot(a,b)#矩阵乘积print(y1)print(y2)print(y3)print(y4)##打印结果如下：[0.03 0.06]6(-11+0j)[[ 5 5] [10 10]] 关于复数，矩阵的知识，很多都遗忘了，去恶补一波。 程序运行结果： 12345678910110 [[-3.7356424 1.3907523]] [4.575044]20 [[-1.1812633 -0.2406981]] [1.2558115]40 [[-0.2971577 -0.03932748]] [0.6534585]60 [[-0.03441996 0.10083049]] [0.42974687]80 [[0.05250379 0.16201632]] [0.34748384]100 [[0.08289348 0.18586293]] [0.31735635]120 [[0.09378852 0.19479726]] [0.3063409]140 [[0.09773692 0.19809395]] [0.30231607]160 [[0.09917431 0.19930299]] [0.3008459]180 [[0.09969857 0.19974531]] [0.30030894]200 [[0.09988993 0.19990698]] [0.3001128] 关于示例程序中的代码说明： 代码 功能 tf.Variable() 用来定义图变量 tf.zeros() 最简单的创建矩阵方式，示例代码中创建了一个一行一列的矩阵 tf.random_uniform(shape,a,b) 用来生成随机的矩阵张量（均匀分布），ab是取值范围 tf。matmul()shape,shape) 矩阵乘积 tf.reduce_mean() 计算张量维度上元素的平均值 tf.square 平方，示例中用来计算方差 tf.train.GradientDescentOptimizer(0.5) 梯度下降优化器，0.5代表学习速率 minimize() 用于优化和更新训练参数 tf.initialize_all_variables() 并行的初始化所有的变量 writer=tf.summary.FileWriter(“logs/“,sess.graph) 这行代码是用来使用tensorboard生成可视化流图]]></content>
+      <categories>
+        <category>learn</category>
+      </categories>
+      <tags>
+        <tag>TensorFlow</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[3月11日]]></title>
+    <url>%2F2018%2F03%2F11%2F3-11%2F</url>
+    <content type="text"><![CDATA[谢春花有点像许嵩，当然，不是职业方面。 她说“所谓救赎从来都该是自救”，这件事类似我们的学习，他人的督促或者管束对于我们自身的学习来说是毫无益处的，因为自我在本质上抵触这件事的话，会本能的忽视和放弃这件事。这也是教育的一个法则，与其严格控制不如善于引导。那些从小就知道学习可贵的人坚信他们的决定，一路过关斩将，在学校里用成绩收割着快乐和信心，进而越战越勇。 认清自我与现实后做出的“看起来能使自我进步的”选择，其实就是救赎。]]></content>
+      <categories>
+        <category>Diary</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>谢春花</tag>
+        <tag>音乐</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[3月9日]]></title>
+    <url>%2F2018%2F03%2F09%2F3-9%2F</url>
+    <content type="text"><![CDATA[“对于一个年轻人来说，如果他很早就洞察人事、谙于世故，如果他很快就懂得如何与人交接、周旋，胸有成竹地步入社会，那么不论从理智还是道德的角度来考虑，这都是一个不好的迹象。这预示着他的本性平庸。相反，一个年轻人对世人的行为方式感到诧异和惊讶，并且与他们的交往中表现得笨拙、乖僻，则显示出他有着高贵的品质。 ——叔本华]]></content>
+      <categories>
+        <category>Diary</category>
+      </categories>
+      <tags>
+        <tag>哲学</tag>
+        <tag>思考</tag>
+        <tag>叔本华</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hi,everybody！]]></title>
+    <url>%2F2018%2F03%2F08%2FHi%2Ceverybody%EF%BC%81%2F</url>
+    <content type="text"><![CDATA[这里是Carlos的无名小站，用于更新个人日志和学习文章。欢迎你的来访。]]></content>
+      <categories>
+        <category>Diary</category>
+      </categories>
+      <tags>
+        <tag>Welcome</tag>
+      </tags>
+  </entry>
+</search>
