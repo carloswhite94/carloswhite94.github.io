@@ -127,7 +127,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="ML,学习笔记," />
 
 
 
@@ -138,16 +138,27 @@
 
 
 
-<meta name="description" content="努力做到极致的冷酷，绝佳的专注，超凡的脱俗如秋鸣寒蝉，迅疾闪电，异端信徒斩断羁绊，踏入孤立纯粹的迷雾无关情感与幸福是迷失，是救赎，是流浪是我">
-<meta property="og:type" content="website">
-<meta property="og:title" content="捌月雪">
-<meta property="og:url" content="https://carloswhite.club/tags/TensorFlow/index.html">
+<meta name="description" content="Model RepresentationTo establish notation for future use, we’ll use x(i) to denote the “input” variables (living area in this example), also called input features, and y(i) to denote the “output” or t">
+<meta name="keywords" content="ML,学习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器学习笔记-PART-2">
+<meta property="og:url" content="https://carloswhite.club/2018/03/24/机器学习part2/index.html">
 <meta property="og:site_name" content="捌月雪">
-<meta property="og:description" content="努力做到极致的冷酷，绝佳的专注，超凡的脱俗如秋鸣寒蝉，迅疾闪电，异端信徒斩断羁绊，踏入孤立纯粹的迷雾无关情感与幸福是迷失，是救赎，是流浪是我">
+<meta property="og:description" content="Model RepresentationTo establish notation for future use, we’ll use x(i) to denote the “input” variables (living area in this example), also called input features, and y(i) to denote the “output” or t">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/H6qTdZmYEeaagxL7xdFKxA_2f0f671110e8f7446bb2b5b2f75a8874_Screenshot-2016-10-23-20.14.58.png?expiry=1522022400000&hmac=csoZLZkz5qjWsMqTtAilCZm5HcScmj8-YfvSQkc_IUg">
+<meta property="og:image" content="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/R2YF5Lj3EeajLxLfjQiSjg_110c901f58043f995a35b31431935290_Screen-Shot-2016-12-02-at-5.23.31-PM.png?expiry=1522022400000&hmac=UJ8jTiA-x1xHjjKYWNuOmnVv8QXKZ8IWhRHiWRcvSOI">
+<meta property="og:image" content="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_B8TJZtREea33w76dwnDIg_3e3d4433e32478f8df446d0b6da26c27_Screenshot-2016-10-26-00.57.56.png?expiry=1522022400000&hmac=__Y3KHu5lkjkN3roevHSOngN-6U0Cb_-3t0tU7qG6-U">
+<meta property="og:image" content="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/8guexptSEeanbxIMvDC87g_3d86874dfd37b8e3c53c9f6cfa94676c_Screenshot-2016-10-26-01.03.07.png?expiry=1522022400000&hmac=Fp8Vm8J2PZarlHmtZRYTWxD98YCjFMWexaBn21kYNfM">
+<meta property="og:image" content="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/fph0S5tTEeajtg5TyD0vYA_9b28bdfeb34b2d4914d0b64903735cf1_Screenshot-2016-10-26-01.09.05.png?expiry=1522022400000&hmac=D4ZOd92JvgzTs8u3cYdgDW5bi2vivIW6Dv-lC5Kdjpg">
+<meta property="og:image" content="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/N2oKYp2wEeaVChLw2Vaaug_d4d1c5b1c90578b32a6672e3b7e4b3a4_Screenshot-2016-10-29-01.14.37.png?expiry=1522022400000&hmac=eRGXDe8OEIRqtekvsH9ra4tGKc2Yrk6rR_jFlarEt-Q">
+<meta property="og:image" content="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/26RZhJ34EeaiZBL80Yza_A_0f38a99c8ceb8aa5b90a5f12136fdf43_Screenshot-2016-10-29-01.14.57.png?expiry=1522022400000&hmac=--125etD4UmNnIK__weAm0M09Agpt0qTxJ1eE-Rroro">
+<meta property="og:image" content="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/hsGgT536Eeai9RKvXdDYag_2a61803b5f4f86d4290b6e878befc44f_Screenshot-2016-10-29-09.59.41.png?expiry=1522022400000&hmac=D6BBPA08_wxDjda-2x7Bcx98EcFwSMlz9h4bJW-lD7s">
+<meta property="og:updated_time" content="2018-03-24T07:46:15.365Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="捌月雪">
-<meta name="twitter:description" content="努力做到极致的冷酷，绝佳的专注，超凡的脱俗如秋鸣寒蝉，迅疾闪电，异端信徒斩断羁绊，踏入孤立纯粹的迷雾无关情感与幸福是迷失，是救赎，是流浪是我">
+<meta name="twitter:title" content="机器学习笔记-PART-2">
+<meta name="twitter:description" content="Model RepresentationTo establish notation for future use, we’ll use x(i) to denote the “input” variables (living area in this example), also called input features, and y(i) to denote the “output” or t">
+<meta name="twitter:image" content="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/H6qTdZmYEeaagxL7xdFKxA_2f0f671110e8f7446bb2b5b2f75a8874_Screenshot-2016-10-23-20.14.58.png?expiry=1522022400000&hmac=csoZLZkz5qjWsMqTtAilCZm5HcScmj8-YfvSQkc_IUg">
 
 
 
@@ -177,13 +188,13 @@
 
 
 
-  <link rel="canonical" href="https://carloswhite.club/tags/TensorFlow/"/>
+  <link rel="canonical" href="https://carloswhite.club/2018/03/24/机器学习part2/"/>
 
 
 
 
 
-  <title>标签: TensorFlow | 捌月雪</title>
+  <title>机器学习笔记-PART-2 | 捌月雪</title>
   
 
 
@@ -202,7 +213,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -340,54 +351,220 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>TensorFlow<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://carloswhite.club/2018/03/24/机器学习part2/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CarlosWhite">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="捌月雪">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/03/12/学习笔记1/" itemprop="url">
-              
-                <span itemprop="name">TensorFlow学习笔记（一）</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">机器学习笔记-PART-2</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-12T20:41:11+08:00"
-              content="2018-03-12" >
-          03-12
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-24T15:41:56+08:00">
+                2018-03-24
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/learn/" itemprop="url" rel="index">
+                    <span itemprop="name">learn</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  826
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Model-Representation"><a href="#Model-Representation" class="headerlink" title="Model Representation"></a>Model Representation</h1><p>To establish notation for future use, we’ll use x(i) to denote the “input” variables (living area in this example), also called input features, and y(i) to denote the “output” or target variable that we are trying to predict (price). A pair (x(i),y(i)) is called a training example, and the dataset that we’ll be using to learn—a list of m training examples (x(i),y(i));i=1,…,m—is called a training set. Note that the superscript “(i)” in the notation is simply an index into the training set, and has nothing to do with exponentiation. We will also use X to denote the space of input values, and Y to denote the space of output values. In this example, X = Y = ℝ.</p>
+<p>To describe the supervised learning problem slightly more formally, our goal is, given a training set, to learn a function h : X → Y so that h(x) is a “good” predictor for the corresponding value of y. For historical reasons, this function h is called a hypothesis. Seen pictorially, the process is therefore like this:<br><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/H6qTdZmYEeaagxL7xdFKxA_2f0f671110e8f7446bb2b5b2f75a8874_Screenshot-2016-10-23-20.14.58.png?expiry=1522022400000&amp;hmac=csoZLZkz5qjWsMqTtAilCZm5HcScmj8-YfvSQkc_IUg" alt="此处输入图片的描述"></p>
+<p>When the target variable that we’re trying to predict is continuous, such as in our housing example, we call the learning problem a regression problem. When y can take on only a small number of discrete values (such as if, given the living area, we wanted to predict if a dwelling is a house or an apartment, say), we call it a classification problem.</p>
+<hr>
+<h1 id="Cost-Function"><a href="#Cost-Function" class="headerlink" title="Cost Function"></a>Cost Function</h1><p>We can measure the accuracy of our hypothesis function by using a cost function. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from x’s and the actual output y’s.</p>
+<p>$$J(θ0,θ1)=\frac1{2m}\sum_{i=1}^m(y_i−y_i)^2=\frac1{2m}\sum_{i=1}^m(hθ(x_i)−y_i)^2$$</p>
+<p>To break it apart, it is 12 x¯ where x¯ is the mean of the squares of hθ(xi)−yi , or the difference between the predicted value and the actual value.</p>
+<p>This function is otherwise called the “Squared error function”, or “Mean squared error”. The mean is halved (12) as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the 12 term. The following image summarizes what the cost function does:<br><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/R2YF5Lj3EeajLxLfjQiSjg_110c901f58043f995a35b31431935290_Screen-Shot-2016-12-02-at-5.23.31-PM.png?expiry=1522022400000&amp;hmac=UJ8jTiA-x1xHjjKYWNuOmnVv8QXKZ8IWhRHiWRcvSOI" alt="此处输入图片的描述"></p>
+<hr>
+<h1 id="Cost-Function-Intuition-I"><a href="#Cost-Function-Intuition-I" class="headerlink" title="Cost Function - Intuition I"></a>Cost Function - Intuition I</h1><p>If we try to think of it in visual terms, our training data set is scattered on the x-y plane. We are trying to make a straight line (defined by <strong>hθ(x)</strong>) which passes through these scattered data points.</p>
+<p>Our objective is to get the best possible line. The best possible line will be such so that the average squared vertical distances of the scattered points from the line will be the least. Ideally, the line should pass through all the points of our training data set. In such a case, the value of <strong>J(θ0,θ1)</strong> will be 0. The following example shows the ideal situation where we have a cost function of 0.<br><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_B8TJZtREea33w76dwnDIg_3e3d4433e32478f8df446d0b6da26c27_Screenshot-2016-10-26-00.57.56.png?expiry=1522022400000&amp;hmac=__Y3KHu5lkjkN3roevHSOngN-6U0Cb_-3t0tU7qG6-U" alt="此处输入图片的描述"></p>
+<p>When <strong>θ1=1</strong>, we get a slope of 1 which goes through every single data point in our model. Conversely, when <strong>θ1=0.5</strong>, we see the vertical distance from our fit to the data points increase.<br><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/8guexptSEeanbxIMvDC87g_3d86874dfd37b8e3c53c9f6cfa94676c_Screenshot-2016-10-26-01.03.07.png?expiry=1522022400000&amp;hmac=Fp8Vm8J2PZarlHmtZRYTWxD98YCjFMWexaBn21kYNfM" alt="此处输入图片的描述"></p>
+<p>This increases our cost function to 0.58. Plotting several other points yields to the following graph:<br><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/fph0S5tTEeajtg5TyD0vYA_9b28bdfeb34b2d4914d0b64903735cf1_Screenshot-2016-10-26-01.09.05.png?expiry=1522022400000&amp;hmac=D4ZOd92JvgzTs8u3cYdgDW5bi2vivIW6Dv-lC5Kdjpg" alt="此处输入图片的描述"></p>
+<p>Thus as a goal, we should try to minimize the cost function. In this case, <strong>θ1=1</strong> is our global minimum.</p>
+<hr>
+<h1 id="Cost-Function-Intuition-II"><a href="#Cost-Function-Intuition-II" class="headerlink" title="Cost Function - Intuition II"></a>Cost Function - Intuition II</h1><p>A contour plot is a graph that contains many contour lines. A contour line of a two variable function has a constant value at all points of the same line. An example of such a graph is the one to the right below.<br><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/N2oKYp2wEeaVChLw2Vaaug_d4d1c5b1c90578b32a6672e3b7e4b3a4_Screenshot-2016-10-29-01.14.37.png?expiry=1522022400000&amp;hmac=eRGXDe8OEIRqtekvsH9ra4tGKc2Yrk6rR_jFlarEt-Q" alt="此处输入图片的描述"></p>
+<p>Taking any color and going along the ‘circle’, one would expect to get the same value of the cost function. For example, the three green points found on the green line above have the same value for <strong>J(θ0,θ1)</strong> and as a result, they are found along the same line. The circled x displays the value of the cost function for the graph on the left when <strong>θ0</strong> = 800 and <strong>θ1</strong>= -0.15. Taking another h(x) and plotting its contour plot, one gets the following graphs:<br><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/26RZhJ34EeaiZBL80Yza_A_0f38a99c8ceb8aa5b90a5f12136fdf43_Screenshot-2016-10-29-01.14.57.png?expiry=1522022400000&amp;hmac=--125etD4UmNnIK__weAm0M09Agpt0qTxJ1eE-Rroro" alt="此处输入图片的描述"></p>
+<p>When <strong>θ0</strong> = 360 and <strong>θ1</strong> = 0, the value of <strong>J(θ0,θ1)</strong> in the contour plot gets closer to the center thus reducing the cost function error. Now giving our hypothesis function a slightly positive slope results in a better fit of the data.<br><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/hsGgT536Eeai9RKvXdDYag_2a61803b5f4f86d4290b6e878befc44f_Screenshot-2016-10-29-09.59.41.png?expiry=1522022400000&amp;hmac=D6BBPA08_wxDjda-2x7Bcx98EcFwSMlz9h4bJW-lD7s" alt="此处输入图片的描述"></p>
+<p>The graph above minimizes the cost function as much as possible and consequently, the result of <strong>θ1</strong> and <strong>θ0</strong> tend to be around 0.12 and 250 respectively. Plotting those values on our graph to the right seems to put our point in the center of the inner most ‘circle’.</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ML/" rel="tag"># ML</a>
+          
+            <a href="/tags/学习笔记/" rel="tag"># 学习笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/24/机器学习part1/" rel="next" title="机器学习笔记-PART-1">
+                <i class="fa fa-chevron-left"></i> 机器学习笔记-PART-1
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -395,6 +572,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -415,8 +596,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -534,6 +724,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Model-Representation"><span class="nav-number">1.</span> <span class="nav-text">Model Representation</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cost-Function"><span class="nav-number">2.</span> <span class="nav-text">Cost Function</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cost-Function-Intuition-I"><span class="nav-number">3.</span> <span class="nav-text">Cost Function - Intuition I</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cost-Function-Intuition-II"><span class="nav-number">4.</span> <span class="nav-text">Cost Function - Intuition II</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -685,6 +891,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
